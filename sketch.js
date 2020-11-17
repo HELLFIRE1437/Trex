@@ -75,10 +75,12 @@ function setup() {
     
 function draw() {
   
-  background(180);
+  background("white");
   //displaying score
-  text("Score: "+ score, 500,50);
   fill("black");
+  
+  text("Score: "+ score, 500,50);
+  
   text("High Score : " + localStorage.getItem("HighScore"),300,50);
   
   if(localStorage.getItem("HighScore") < score){
